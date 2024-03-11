@@ -1,0 +1,31 @@
+name: Test
+
+on:
+  # Enable manual triggering
+  workflow_dispatch:
+
+  # Enable calling from other 
+  # workflows, like Release
+  workflow_call:
+
+  # Run automatically for pull requests
+  pull_request:
+    branches: [ "main" ]
+
+env:
+   TEST_VERBOSITY: 'minimal'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Test
+        run: dotnet test -c Release --verbosity ${{ env.TEST_VERBOSITY }}
