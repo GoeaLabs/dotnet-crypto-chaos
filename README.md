@@ -30,8 +30,10 @@ For any given **kernel** (seed), **Chaos** is capable of producing 2<sup>64</sup
 - Passes **RFC8439** test vectors;
 - Endian-neutral;
 - Can produce random numbers up to 512 bits with scaling to arbitrary ranges;
-- No memory allocations beyond BigInteger overloads;
+- No memory allocations beyond BigInteger overload;
 - Supports all .NET platforms, including WebAssembly;
+- No unsafe code;
+- Fully managed;
 - Simple API;
 
 ## Examples
