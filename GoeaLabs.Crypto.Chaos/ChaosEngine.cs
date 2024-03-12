@@ -194,7 +194,6 @@ public static class ChaosEngine
     /// </exception>
     public static void NewKernel(Span<uint> output)
     {
-        //Guard.HasSizeEqualTo(output, KernelLen);
         if (output.Length != KernelLen)
             throw new ChaosException(ChaosErrorCode.ErrKernel, ErrKernel);
         
