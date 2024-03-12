@@ -13,8 +13,8 @@
 			A cryptographically secure deterministic random number generator for .NET, based on RFC8439 ChaCha.
 		</Description>
 		<Copyright>Copyright 2022, GoeaLabs</Copyright>
-		<PackageProjectUrl>https://github.com/goealabs/dotnet-chaos</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/goealabs/dotnet-chaos</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/goealabs/dotnet-crypto-chaos</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/goealabs/dotnet-crypto-chaos</RepositoryUrl>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
